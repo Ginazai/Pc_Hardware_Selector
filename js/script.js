@@ -10,7 +10,6 @@ $(document).ready( function () {
   //image is collapse thought
   var clickCount = 0;
   $('.btn').click(function() {
-    console.log('start' + clickCount);
     if ($('head').children('style').length < 1 && clickCount % 2 != 0) {
       var rule = '.btn:focus {outline: none; box-shadow: none;}';
       var style = document.createElement('style');
@@ -36,7 +35,7 @@ $(document).ready( function () {
   }
   //the main reason to build the function in first place lol. Would probably be
   //one hundred times more lines
-  onHoverChangeImage('#proccesor', 'images/FocusProccessor.png');
+  onHoverChangeImage('#processor', 'images/FocusProccessor.png');
   onHoverChangeImage('#case', 'images/FocusCase.png');
   onHoverChangeImage('#ssd', 'images/FocusSSD.png');
   onHoverChangeImage('#mobo', 'images/moboFocus.png');
