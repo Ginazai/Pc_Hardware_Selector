@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pc Part Picker</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="btn" type="button" name="button" data-toggle="collapse"
+      data-target="#collapsable-widget" aria-expanded="false"
+      aria-controls="collapsable-widget">Toggle</button>
+    </div>
+    <div class="collapse content" id="collapsable-widget">
+      <div class="card card-body">
+        <img id="pcImg" src="images/base.png" usemap="#PC" height="350"
+        width="350">
+        <map id="PC" name="PC">
+          <area id="proccesor" shape="circle" coords="118, 94, 20" href="#"
+          alt="proccesor">
+          <area id="ssd" shape="rect" coords="240, 78, 288, 144" href="#"
+          alt="ssd">
+          <area id="ram" shape="rect" coords="159, 50, 178, 137" href="#"
+          alt="ram">
+          <area id="radiator" shape="rect" coords="10, 35, 22, 133" href="#"
+          alt="radiator">
+          <area id="radiator2" shape="rect" coords="22, 125, 40, 135" href="#"
+          alt="radiator2">
+          <area id="fan1" shape="circle" coords="35, 46, 12" href="#"
+          alt="fan1">
+          <area id="fan2" shape="circle" coords="37, 69, 15" href="#"
+          alt="fan2">
+          <area id="fan3" shape="circle" coords="39, 96, 15" href="#"
+          alt="fan3">
+          <area id="fan4" shape="circle" coords="35, 113, 10" href="#"
+          alt="fan4">
+          <area id="radiator" shape="rect" coords="10, 35, 22, 133" href="#"
+          alt="radiator">
+          <area id="radiator2" shape="rect" coords="22, 125, 40, 135" href="#"
+          alt="radiator2">
+          <area id="cooler" shape="poly" coords="120, 31 151, 90 81, 31" href="#" alt="cooler">
+          <area id="gpu" shape="rect" coords="14, 160, 230, 186" href="#" alt="gpu">
+
+          <area id="psu" shape="rect" coords="20, 271, 115, 315" href="#" alt="psu">
+
+          <area id="mobo" shape="rect" coords="34, 34, 195, 244" href="#"
+          alt="motherboard">
+          <area id="case" shape="rect" coords="0, 0, 340, 333" href="#"
+          alt="case">
+        </map>
+      </div>
+    </div>
+  </body>
+</html>

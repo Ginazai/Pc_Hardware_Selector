@@ -1,0 +1,25 @@
+.btn {
+  width: 50%;
+}
+.wrapper {
+  text-align: center;
+}
+.card {
+  text-align: center;
+  margin-top: 25px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#pcImg {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 0px) and (max-width: 991px)  {
+  .btn {
+    width: 50%;
+  }
+  .card {
+    width: 85%;
+  }
+}
