@@ -26,16 +26,24 @@ $(document).ready( function () {
     }
   });
   //on hover apply the new image->and then restore the default one
+  var position = 0;
   function onHoverChangeImage(elementId, assnImg) {
     $(elementId).hover(function () {
       document.getElementById('pcImg').src=assnImg;
+      //each time you hover an element, the text the popup displays chenge in
+      //relation to the current element (this is achive by getting the 'alt'
+      //attribute)
+      var pop = document.getElementById('topopup');
+      pop.innerHTML = $(this).attr('alt');
+      $('#topopup').toggleClass('show');
     }, function () {
       document.getElementById('pcImg').src='images/base.png';
+      $('#topopup').removeClass('show');
     });
   }
   //the main reason to build the function in first place lol. Would probably be
   //one hundred times more lines
-  onHoverChangeImage('#processor', 'images/FocusProccessor.png');
+  onHoverChangeImage('#processor', 'images/FocusProcessor.png');
   onHoverChangeImage('#case', 'images/FocusCase.png');
   onHoverChangeImage('#ssd', 'images/FocusSSD.png');
   onHoverChangeImage('#mobo', 'images/moboFocus.png');

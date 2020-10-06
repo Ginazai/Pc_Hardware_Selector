@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Pc Part Picker</title>
+    <title>Pc Hardware Selector</title>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap">
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -29,39 +29,31 @@
         <img id="pcImg" src="images/base.png" usemap="#PC" height="350"
         width="350">
         <map id="PC" name="PC">
-          <area id="processor" shape="circle" coords="118, 94, 20" href="#"
-          alt="processor">
-          <area id="ssd" shape="rect" coords="240, 78, 288, 144" href="#"
-          alt="ssd">
-          <area id="ram" shape="rect" coords="159, 50, 178, 137" href="#"
-          alt="ram">
-          <area id="radiator" shape="rect" coords="10, 35, 22, 133" href="#"
-          alt="radiator">
-          <area id="radiator2" shape="rect" coords="22, 125, 40, 135" href="#"
-          alt="radiator2">
-          <area id="fan1" shape="circle" coords="35, 46, 12" href="#"
-          alt="fan1">
-          <area id="fan2" shape="circle" coords="37, 69, 15" href="#"
-          alt="fan2">
-          <area id="fan3" shape="circle" coords="39, 96, 15" href="#"
-          alt="fan3">
-          <area id="fan4" shape="circle" coords="35, 113, 10" href="#"
-          alt="fan4">
-          <area id="radiator" shape="rect" coords="10, 35, 22, 133" href="#"
-          alt="radiator">
-          <area id="radiator2" shape="rect" coords="22, 125, 40, 135" href="#"
-          alt="radiator2">
+          <area id="processor" shape="circle" coords="118, 94, 20"
+          alt="Processor">
+          <area id="ssd" shape="rect" coords="240, 78, 288, 144" alt="SSD">
+          <area id="ram" shape="rect" coords="159, 50, 178, 137" alt="RAM">
+          <area id="radiator" shape="rect" coords="10, 35, 22, 133"
+          alt="Cooler">
+          <area id="radiator2" shape="rect" coords="22, 125, 40, 135"
+          alt="Cooler">
+          <area id="fan1" shape="circle" coords="35, 46, 12" alt="Fan">
+          <area id="fan2" shape="circle" coords="37, 69, 15" alt="Fan">
+          <area id="fan3" shape="circle" coords="39, 96, 15" alt="Fan">
+          <area id="fan4" shape="circle" coords="35, 113, 10" alt="Fan">
           <area id="cooler" shape="poly" coords="120, 31 151, 90 81, 31"
-          href="#" alt="cooler">
-          <area id="gpu" shape="rect" coords="14, 160, 230, 186" href="#"
-          alt="gpu">
-          <area id="psu" shape="rect" coords="20, 271, 115, 315" href="#"
-          alt="psu">
-          <area id="mobo" shape="rect" coords="34, 34, 195, 244" href="#"
-          alt="motherboard">
-          <area id="case" shape="rect" coords="0, 0, 340, 333" href="#"
-          alt="case">
+          alt="Cooler">
+          <area id="gpu" shape="rect" coords="14, 160, 230, 186" alt="GPU">
+          <area id="psu" shape="rect" coords="20, 271, 115, 315" alt="PSU">
+          <area id="mobo" shape="rect" coords="34, 34, 195, 244"
+          alt="Motherboard">
+          <area id="case" shape="rect" coords="0, 0, 340, 333" alt="Case">
         </map>
+        <!-- Popup -->
+        <div class="popup">
+          <span class="popuptext" id="topopup"></span>
+        </div>
+        <!---->
       </div> <!-- get rid of this tag (it's from collapse content)-->
     </div>
     <footer>
