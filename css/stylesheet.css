@@ -11,7 +11,7 @@ a:hover {
 /* ------------------------------------------------------------------------
 Basic CSS popup. you can learn how to do this in:
 https://www.w3schools.com/howto/howto_js_popup.asp (bootstrap also have an easier
-way to achive a fair similar result)*/
+way to achive a fairly similar result)*/
 
 /*popup container*/
 .popup {
@@ -92,6 +92,7 @@ area{cursor:pointer;}
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 .footer {
   position: fixed;
