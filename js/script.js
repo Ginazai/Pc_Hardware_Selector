@@ -28,7 +28,17 @@ $(document).ready( function () {
   //on hover apply the new image->and then restore the default one
   var position = 0;
   function onHoverChangeImage(elementId, assnImg) {
+    //unimplemented css code. It supposed to add this piece of code so that the
+    //popup fade. but it doesn't occure at the right time
+
+    // var rule = '@-webkit-keyframes fadeIn {from{opacity: 1;}to{opacity: 0;}}'+
+    // '@keyframes fadeIn {from{opacity: 1;}to{opacity: 0;}}';
+    // var style = document.createElement('style');
+    // style.type = 'text/css';
+    // style.innerHTML = rule;
+    // style.setAttribute('id', 'fade');
     $(elementId).hover(function () {
+      $('#fade').remove();
       document.getElementById('pcImg').src=assnImg;
       //each time you hover an element, the text the popup displays chenge in
       //relation to the current element (this is achive by getting the 'alt'
@@ -38,6 +48,8 @@ $(document).ready( function () {
       $('#topopup').toggleClass('show');
     }, function () {
       document.getElementById('pcImg').src='images/base.png';
+      //i implement the $('head').append(style); in here with a "setTimeout" but
+      //it ommit it
       $('#topopup').removeClass('show');
     });
   }
