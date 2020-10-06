@@ -107,6 +107,9 @@ area{cursor:pointer;}
   margin-right: auto;
 }
 @media (max-width: 991px)  {
+  html {
+    font-size: 1.5em;
+  }
   .btn {
     width: 50%;
   }
