@@ -108,7 +108,7 @@ area{cursor:pointer;}
 }
 @media (max-width: 991px)  {
   html {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
   .btn {
     width: 50%;
